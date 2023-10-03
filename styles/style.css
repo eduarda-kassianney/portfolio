@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria:#000000;
+    --cor-secundaria:#F6F6F6;
+    --cor--terciaria:#B8621B;
+    --cor-hover: #272727;
+    --cor-hover-secundaria: #E86A33;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 6%;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor--terciaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--cor-hover-secundaria);
+    text-decoration: underline;
+}
+
+.titulo-destaque{
+    color: var(--cor--terciaria);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+.apresentacao__links__botao{
+    border: 2px solid var(--cor--terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor--terciaria);
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao__links__botao:hover{
+    background-color: var(--cor-hover);
+    padding: 3%;
+}
+
+.rodape{
+    background-color: var(--cor--terciaria);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
